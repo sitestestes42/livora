@@ -80,7 +80,7 @@ nav{
 .hero-grid{
   display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:70px;position:relative;z-index:1
 }
-.hero-copy h1{font-size:clamp(55px,6.6vw,92px);line-height:.95;letter-spacing:-4px;margin:22px 0}
+.hero-copy h1{font-size:clamp(50px,5.8vw,78px);line-height:.95;letter-spacing:-4px;margin:22px 0}
 .hero-copy h1 i{color:var(--rose);font-weight:500}
 .hero-copy>p{max-width:580px;font-size:17px}
 .actions{display:flex;gap:12px;margin:30px 0 34px;flex-wrap:wrap}
@@ -97,7 +97,7 @@ nav{
 .hero-note strong{display:block;color:var(--ink);margin-bottom:3px}
 .hero-note .mini{width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:var(--rose);font-size:12px}
 
-.hero-art{position:relative;min-height:570px}
+.hero-art{position:relative;min-height:520px;max-height:560px}
 .hero-main{
   position:absolute;inset:0 35px 20px 0;border-radius:240px 240px 28px 28px;overflow:hidden;
   box-shadow:var(--shadow);background:#ddd
@@ -290,6 +290,12 @@ footer{background:#20342b;color:#fff;padding:70px 0 22px}
   .footer-main{grid-template-columns:1fr 1fr;gap:35px}.footer-brand-wrap{grid-column:1 / span 2}.footer-contact{grid-column:auto}
   .footer-bottom{display:block}.footer-bottom span{display:block;margin-bottom:8px}
 }
+
+.hero-main img{object-position:center 55%}
+.product-img img{object-position:center 50%}
+.occasion img{object-position:center 50%}
+.editorial-photo img{object-position:center 48%}
+.gallery img{object-position:center 50%}
 </style>
 </head>
 
@@ -331,7 +337,7 @@ footer{background:#20342b;color:#fff;padding:70px 0 22px}
 
     <div class="hero-art reveal">
       <div class="hero-main">
-        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=88" alt="Composição floral">
+        <img src="/images/01-hero-floricultura.webp" alt="Composição floral">
       </div>
       <div class="flower-orb">✿</div>
       <div class="floating">
@@ -357,17 +363,17 @@ FLORES FRESCAS <b>✦</b> ARRANJOS AUTORAIS <b>✦</b> PRESENTES COM SIGNIFICADO
 
     <div class="products">
       <article class="product reveal">
-        <div class="product-img"><span class="pill">Mais pedido</span><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=88" alt="Buquê delicado"></div>
+        <div class="product-img"><span class="pill">Mais pedido</span><img src="/images/02-buque-aurora.webp" alt="Buquê delicado"></div>
         <div class="product-body"><h3>Buquê Aurora</h3><p>Uma composição delicada em tons claros e rosados.</p><div class="product-foot"><span class="price">A partir de R$ 129</span><button class="small-btn" onclick="order('Buquê Aurora')">Encomendar</button></div></div>
       </article>
 
       <article class="product reveal">
-        <div class="product-img"><span class="pill">Autoral</span><img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=900&q=88" alt="Arranjo floral"></div>
+        <div class="product-img"><span class="pill">Autoral</span><img src="/images/03-arranjo-jardim.webp" alt="Arranjo floral"></div>
         <div class="product-body"><h3>Jardim</h3><p>Volume, textura e flores da estação em uma composição orgânica.</p><div class="product-foot"><span class="price">A partir de R$ 169</span><button class="small-btn" onclick="order('Arranjo Jardim')">Encomendar</button></div></div>
       </article>
 
       <article class="product reveal">
-        <div class="product-img"><span class="pill">Presente</span><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=88" alt="Flores para presente"></div>
+        <div class="product-img"><span class="pill">Presente</span><img src="/images/04-amor-em-flor.webp" alt="Flores para presente"></div>
         <div class="product-body"><h3>Amor em Flor</h3><p>Uma composição marcante para datas que merecem ser lembradas.</p><div class="product-foot"><span class="price">A partir de R$ 189</span><button class="small-btn" onclick="order('Amor em Flor')">Encomendar</button></div></div>
       </article>
     </div>
@@ -381,10 +387,10 @@ FLORES FRESCAS <b>✦</b> ARRANJOS AUTORAIS <b>✦</b> PRESENTES COM SIGNIFICADO
       <p>Escolha o momento. A gente cuida da composição.</p>
     </div>
     <div class="occasions">
-      <div class="occasion reveal" onclick="order('Flores para aniversário')"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&q=88" alt="Flores para aniversário"><div class="oc-text"><small>Celebrar</small><h3>Aniversário</h3></div></div>
-      <div class="occasion reveal" onclick="order('Flores para presente')"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=88" alt="Flores para presente"><div class="oc-text"><small>Surpreender</small><h3>Presente</h3></div></div>
-      <div class="occasion reveal" onclick="order('Flores românticas')"><img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=800&q=88" alt="Flores românticas"><div class="oc-text"><small>Amor</small><h3>Romântico</h3></div></div>
-      <div class="occasion reveal" onclick="order('Arranjo corporativo')"><img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=88" alt="Arranjo para ambiente"><div class="oc-text"><small>Ambientes</small><h3>Corporativo</h3></div></div>
+      <div class="occasion reveal" onclick="order('Flores para aniversário')"><img src="/images/05-aniversario.webp" alt="Flores para aniversário"><div class="oc-text"><small>Celebrar</small><h3>Aniversário</h3></div></div>
+      <div class="occasion reveal" onclick="order('Flores para presente')"><img src="/images/06-presente.webp" alt="Flores para presente"><div class="oc-text"><small>Surpreender</small><h3>Presente</h3></div></div>
+      <div class="occasion reveal" onclick="order('Flores românticas')"><img src="/images/07-romantico.webp" alt="Flores românticas"><div class="oc-text"><small>Amor</small><h3>Romântico</h3></div></div>
+      <div class="occasion reveal" onclick="order('Arranjo corporativo')"><img src="/images/08-corporativo.webp" alt="Arranjo para ambiente"><div class="oc-text"><small>Ambientes</small><h3>Corporativo</h3></div></div>
     </div>
   </div>
 </section>
@@ -392,7 +398,7 @@ FLORES FRESCAS <b>✦</b> ARRANJOS AUTORAIS <b>✦</b> PRESENTES COM SIGNIFICADO
 <section class="section" id="atelier">
   <div class="wrap editorial">
     <div class="editorial-photo reveal">
-      <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1000&q=88" alt="Ateliê de flores">
+      <img src="#image-not-used" alt="Ateliê de flores">
       <div class="editorial-card"><b>Flores com intenção.</b><p style="font-size:11px;margin:8px 0 0">Cada composição começa com uma história.</p></div>
     </div>
     <div class="editorial-copy reveal">
@@ -419,8 +425,8 @@ FLORES FRESCAS <b>✦</b> ARRANJOS AUTORAIS <b>✦</b> PRESENTES COM SIGNIFICADO
       <a class="btn rose" href="#contato">Conhecer o atendimento</a>
     </div>
     <div class="story-images reveal">
-      <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=88" alt="Flores e folhagens">
-      <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=800&q=88" alt="Arranjo floral">
+      <img src="#image-not-used" alt="Flores e folhagens">
+      <img src="#image-not-used" alt="Arranjo floral">
     </div>
   </div>
 </section>
@@ -446,11 +452,11 @@ FLORES FRESCAS <b>✦</b> ARRANJOS AUTORAIS <b>✦</b> PRESENTES COM SIGNIFICADO
       <p>Texturas, cores e flores que fazem parte do nosso dia a dia.</p>
     </div>
     <div class="gallery">
-  <figure class="reveal tall"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=90" alt="Rosas em composição floral"></figure>
-  <figure class="reveal wide"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=90" alt="Flores rosas e folhagens"></figure>
-  <figure class="reveal"><img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=900&q=90" alt="Arranjo de flores"></figure>
-  <figure class="reveal"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=90" alt="Flores para presente"></figure>
-  <figure class="reveal wide-bottom"><img src="https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=1200&q=90" alt="Flores em tons naturais"></figure>
+  <figure class="reveal tall"><img src="/images/11-galeria-buque-sofisticado.webp" alt="Rosas em composição floral"></figure>
+  <figure class="reveal wide"><img src="/images/12-galeria-flores-vaso.webp" alt="Flores rosas e folhagens"></figure>
+  <figure class="reveal"><img src="/images/13-galeria-arranjo-cima.webp" alt="Arranjo de flores"></figure>
+  <figure class="reveal"><img src="/images/14-galeria-close-flor.webp" alt="Flores para presente"></figure>
+  <figure class="reveal wide-bottom"><img src="/images/15-galeria-ambiente.webp" alt="Flores em tons naturais"></figure>
 </div></div>
 </section>
 
